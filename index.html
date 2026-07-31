@@ -15,11 +15,26 @@
 
   <main>
     <section class="card">
-      <h2>About Me</h2>
-      <p>This is my personalized home on the web hosted via GitHub Pages.</p>
+      <h2>Interactive Zone</h2>
+      <p>Want to play a quick game?</p>
       
-      <button id="magic-btn">Click Me for Magic!</button>
-      <p id="magic-text" class="hidden-text"></p>
+      <button id="start-game-btn">Play Tic-Tac-Toe!</button>
+
+      <div id="game-container" class="hidden">
+        <div id="status-message">Player X's Turn</div>
+        <div class="tic-tac-toe-board" id="board">
+          <button class="cell" data-index="0"></button>
+          <button class="cell" data-index="1"></button>
+          <button class="cell" data-index="2"></button>
+          <button class="cell" data-index="3"></button>
+          <button class="cell" data-index="4"></button>
+          <button class="cell" data-index="5"></button>
+          <button class="cell" data-index="6"></button>
+          <button class="cell" data-index="7"></button>
+          <button class="cell" data-index="8"></button>
+        </div>
+        <button id="restart-btn">Restart Game</button>
+      </div>
     </section>
   </main>
 
