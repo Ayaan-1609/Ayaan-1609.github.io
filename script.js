@@ -1,23 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("clickBtn");
 
-    // Array of colors to cycle through
-    const colors = [
-        "#f3f4f6", // Default light grey
-        "#fef3c7", // Soft yellow
-        "#d1fae5", // Soft green
-        "#e0f2fe", // Soft blue
-        "#fce7f3", // Soft pink
-        "#f3e8ff"  // Soft purple
+    // Array containing the traditional rainbow colors (ROYGBIV)
+    const rainbowColors = [
+        "#FF0000", // Red
+        "#FF7F00", // Orange
+        "#FFFF00", // Yellow
+        "#00FF00", // Green
+        "#0000FF", // Blue
+        "#4B0082", // Indigo
+        "#9400D3"  // Violet
     ];
 
-    let currentColorIndex = 0;
+    let currentColorIndex = -1;
 
     button.addEventListener("click", () => {
-        // Move to the next index in the array
-        currentColorIndex = (currentColorIndex + 1) % colors.length;
+        // Increment and wrap around using modulo
+        currentColorIndex = (currentColorIndex + 1) % rainbowColors.length;
 
-        // Apply the new background color to the main container or body
-        document.body.style.backgroundColor = colors[currentColorIndex];
+        // Apply rainbow color to the background
+        document.body.style.backgroundColor = rainbowColors[currentColorIndex];
     });
 });
