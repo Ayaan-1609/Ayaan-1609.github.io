@@ -6,6 +6,15 @@ body {
     background-color: #f4f7f6;
     color: #333333;
     text-align: center;
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    /* Adds a smooth smooth fade effect between colors */
+    transition: background-color 0.5s ease;
 }
 
 /* Header section styling with a blue background and white text */
