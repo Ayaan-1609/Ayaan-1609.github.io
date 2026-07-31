@@ -1,17 +1,23 @@
-// Wait for the web page content to fully load before running JavaScript
-document.addEventListener('DOMContentLoaded', () => {
-    
-    // Select the button and message paragraph from the DOM using their IDs
-    const magicBtn = document.getElementById('magic-btn');
-    const magicText = document.getElementById('magic-text');
+document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("clickBtn");
 
-    // Add an event listener to detect when the student/visitor clicks the button
-    magicBtn.addEventListener('click', () => {
-        // Dynamically update the text content and style
-        magicText.textContent = "🎉 You activated JavaScript! Great job setting up your site.";
-        magicText.style.color = "#2e7d32";
-        magicText.style.fontWeight = "bold";
-        magicText.style.marginTop = "1rem";
+    // Array of colors to cycle through
+    const colors = [
+        "#f3f4f6", // Default light grey
+        "#fef3c7", // Soft yellow
+        "#d1fae5", // Soft green
+        "#e0f2fe", // Soft blue
+        "#fce7f3", // Soft pink
+        "#f3e8ff"  // Soft purple
+    ];
+
+    let currentColorIndex = 0;
+
+    button.addEventListener("click", () => {
+        // Move to the next index in the array
+        currentColorIndex = (currentColorIndex + 1) % colors.length;
+
+        // Apply the new background color to the main container or body
+        document.body.style.backgroundColor = colors[currentColorIndex];
     });
-
 });
