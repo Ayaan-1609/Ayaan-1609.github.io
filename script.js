@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add an event listener to respond when the button is clicked
   magicBtn.addEventListener("click", () => {
     // Change the text content dynamically
-    magicText.textContent = "🎉 You clicked the button! Your JS dynamic code is working!";
+    magicText.textContent = "🎉 Welcome to Ayaan's interactive portfolio page!";
     magicText.style.color = "#319795";
     magicText.style.fontWeight = "bold";
   });
