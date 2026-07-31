@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     magicBtn.addEventListener('click', () => {
         // Dynamically update the text content and style
         magicText.textContent = "🎉 You activated JavaScript! Great job setting up your site.";
+        magicText.textContent = "Change Color";
         magicText.style.color = "#2e7d32";
         magicText.style.fontWeight = "bold";
         magicText.style.marginTop = "1rem";
